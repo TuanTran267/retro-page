@@ -1,0 +1,50 @@
+.about {
+  background-image: url(../images/about-bg.jpg);
+  padding-top: 50px;  &-title
+  {
+    font-family: bazarmedium;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 3px 0px 0px rgba(255, 255, 255, 0.93), 5px 0px 0px rgba(0,0,0,0.93) ;
+    .separator {
+      display: block;
+      margin: auto;
+    }
+    &-intro {
+      font-family: "Oswald", sans-serif;
+      font-size: 30px;
+      text-shadow: none;
+      display: block;
+      padding-top: 20px;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: stretch;
+    padding-top: 30px;
+    &-item {
+      flex-basis: 100%;
+      text-align: center;
+      margin: 10px;
+      .name {
+        font-family: bazarmedium;
+        font-size: 2rem;
+        padding-top: 10px;
+        &-sub {
+          font-family: 'Roboto', sans-serif;
+          font-size: 1rem;
+          display: block;
+          font-weight: bold;
+        }
+      }
+      .content {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        padding-top: 20px;
+        &-bold {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
