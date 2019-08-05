@@ -76,6 +76,7 @@ html, body {
 
 .intro {
   background-image: url("../images/header-bg.jpg");
+  padding-top: 140px;
     &-title {
       font-family: seasideresortnfregular;
       font-size: 100px;
@@ -147,10 +148,190 @@ html, body {
     color: #f7ebd8;
     font-size: 1.8rem;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 50px;
   }
 }
 
+section {
+  position: relative;
+  .title {
+    font-family: bazarmedium;
+    text-align: center;
+    h2 {
+      font-size: 7rem;
+      text-shadow: 2px 2px 1px #fff, 4px 4px 1px #000;
+      position: relative;
+      padding-bottom: 25px;
+      margin-bottom: 10px;
+      &:after {
+        content: '';
+        background-image: url("../images/separator.png");
+        height: 25px;
+        width: 200px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    p {
+      font-family: bazarmedium;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+}
 
+.connect-line {
+  background-image: url(../images/img-line.png);
+  width: 100%;
+  height: 35px;
+  margin-top: -12px;
+  background-size: cover;
+  background-repeat-y: no-repeat;
+  margin-bottom: -17px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2
+}
 
+.porfolio {
+  background-image: url("../images/bg-porfolio.jpg");
+  padding: 50px 0;
+  &-filter {
+    max-width: 700px;
+    margin: auto;
+    padding-bottom: 30px;
+    .tag {
+      &-list {
+        display: flex;
+      }
+      &-item {
+        background-color: #fbfaf6;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: relative;
+        margin-right: 20px;
+        padding: 0 10px;
+        &:before {
+          content: '';
+          background-image: url("../images/arrow-tag.png");
+          height: 26px;
+          width: 12px;
+          position: absolute;
+          left: -12px;
+        }
+      }
+    }
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    &-item {
+      padding: 10px;
+      background-color: #fbfaf6;
+      margin: 0 10px 20px;
+      width: 30%;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px #2d2d2d;
+      img {
+        width: 100%;
+      }
+      h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: "Roboto Slab", serif;
+        padding: 15px 0 0;
+      }
+    }
+  }
+}
 
+.myblog {
+  padding: 50px 0;
+  background-image: url("../images/bg-myblog.jpg");
+  &-list {
+    padding-top: 50px;
+    &-item {
+      display: flex;
+      &-thumbnail {
+        //width: 40%;
+        img {
+          padding: 5px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 1px 1px 4px #000;
+        }
+      }
+      &-info {
+        width: 80%;
+        font-family: 'Roboto Slab', serif;
+        padding-left: 40px;
+        h5 {
+          font-size: 2rem;
+          padding-bottom: 10px;
+        }
+        .date {
+          padding-bottom: 10px;
+          font-size: 1rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  background-image: url("../images/bg-contact.jpg");
+  padding: 50px 0;
+  .title {
+    font-size: 7rem;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    color: #f6edd8;
+    h2 {
+      text-shadow: 2px 2px 1px #fff, 4px 4px 1px #f6edd8;
+    }
+  }
+  &-form {
+    width: 700px;
+    margin: auto;
+    input {
+      width: 100%;
+      border-radius: 5px;
+      height: 50px;
+      margin-bottom: 15px;
+      padding-left: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 180px;
+      border-radius: 5px;
+      padding-left: 20px;
+    }
+  }
+}
+
+.line {
+  height: 5px;
+  width: 50px;
+  background-color: #393a3a;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.loadmore {
+  font-family: bazarmedium;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #393a3a;
+}
