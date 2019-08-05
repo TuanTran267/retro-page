@@ -6,16 +6,28 @@ header {
     list-style: none;
     align-items: center;
       a {
-        padding:0 30px;
+        padding:0 35px;
         display: inline-block;
         font-family: bazarmedium;
         font-size: 1.5rem;
+        color: #f9ebd9 !important;
       }
   }
   .double-line {
-     background-image: url("../images/doubleline-pattern.jpg");
-     height: 50px;
+      background-image: url("../images/doubleline-pattern.jpg");
+      height: 30px;
       width: 100%;
+      margin-top: -40px;
+      background-size: contain;
    }
 
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
 }

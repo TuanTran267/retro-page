@@ -73,3 +73,84 @@ input {
 html, body {
   height: 100%;
 }
+
+.intro {
+  background-image: url("../images/header-bg.jpg");
+    &-title {
+      font-family: seasideresortnfregular;
+      font-size: 100px;
+      text-align: center;
+      color: #f6edd8;
+      text-shadow: 5px 3px 0px #4B4E50;
+    }
+  &-ribbon {
+    background-image: url(../images/img-ribbon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0 15px;
+    font-family: bazarmedium;
+    color: #4b4e4c;
+  }
+  &-slider {
+    width: auto;
+    margin: auto;
+    padding: 12px 14px;
+    background-color: #fbfaf6;
+    margin-top: 50px;
+    position: relative;
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      .owl-next {
+        position: absolute;
+        right: 0;
+        margin: 0;
+        outline: none;
+        &:before {
+          content: "";
+          width: 25px;
+          height: 60px;
+          background-image: url(../images/nav-right.png);
+          background-size: 25px 60px;
+          position: absolute;
+          right: 0;
+        }
+      }
+      .owl-prev {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        outline: none;
+        &:before {
+          content: "";
+          width: 25px;
+          height: 60px;
+          background-image: url(../images/nav-left.png);
+          background-size: 25px 60px;
+          position: absolute;
+        }
+      }
+    }
+    &-title {
+      text-align: center;
+      font-family: bazarmedium;
+      font-size: 25px;
+      padding: 15px 0 0;
+    }
+  }
+  &-desc {
+    font-family: bazarmedium;
+    color: #f7ebd8;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+
+
+
